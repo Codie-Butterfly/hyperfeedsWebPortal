@@ -1,0 +1,13 @@
+{
+    auto_https disable_redirects
+}
+https://62.171.128.245 {
+    tls {
+        issuer acme {
+            dir https://acme-v02.api.letsencrypt.org/directory
+            profile shortlived
+            disable_http_challenge
+        }
+    }
+    reverse_proxy hyperfeeds-web-portal:80
+}
