@@ -1,5 +1,6 @@
 {
     auto_https disable_redirects
+    default_sni 62.171.128.245
 }
 https://62.171.128.245 {
     tls {
